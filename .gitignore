@@ -1,5 +1,8 @@
-# Modules ignore
+# Modules
 node_modules/
 
-# File ignore
+# File
 package-lock.json
+
+# Temp file
+_temp/
