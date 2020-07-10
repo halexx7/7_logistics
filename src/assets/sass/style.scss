@@ -9,9 +9,9 @@ html {
 body {
     margin: 0;
 
-    background-color: $gray;
+    background-color: $white;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     color: $black;
     font-size: 1rem;
     line-height: 1.5;
@@ -33,3 +33,5 @@ body {
 
 /* Blocks */
 @import "blocks/header";
+@import "blocks/container";
+@import "blocks/nav";
