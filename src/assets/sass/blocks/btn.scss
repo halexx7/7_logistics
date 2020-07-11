@@ -1,0 +1,26 @@
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 11px 20px;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    color: $white;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+
+    background: #333;
+    border: 0;
+    border-radius: $radius_sm;
+}
+
+.btn--orange {
+    background-image: linear-gradient(to right, #FF903E, #FF2C2C);
+}
+
+.btn--block {
+    display: block;
+    width: 100%;
+}

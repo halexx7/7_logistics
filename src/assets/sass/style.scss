@@ -23,6 +23,17 @@ body {
     box-sizing: border-box;
 }
 
+/* Сбрасываем по умолчанию все отступы заголовков */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Сбрасываем отступы и стилизацию списков */
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 /* Bootstrap */
 @import "../../../node_modules/bootstrap/scss/functions";
@@ -35,3 +46,6 @@ body {
 @import "blocks/header";
 @import "blocks/container";
 @import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/form";
+@import "blocks/btn";

@@ -1,0 +1,44 @@
+.intro {
+    background: $black url("../img/intro-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.intro__inner {
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.intro__text {
+
+    margin-bottom: 45px;
+    text-align: right;
+}
+
+.intro__countries {
+    font-size: 1rem;
+    color: $white;
+}
+
+.intro__title {
+    position: relative;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 7.3rem;
+    line-height: 0.9;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 700;
+}
+
+.intro__title-amp {
+    font-size: 11.3rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.2);
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+}

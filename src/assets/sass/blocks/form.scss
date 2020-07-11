@@ -1,0 +1,100 @@
+.request-form {
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+
+    background-color: $blue;
+    border-radius: $radius_sm;
+
+}
+.request-form--intro {
+    position: relative;
+    bottom: -30px;
+}
+
+/* Form header*/
+.request-form__header {
+    padding: 20px 30px;
+
+    background-color: $blue_dark;
+}
+
+.request-form__title {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    line-height: 1.6;
+    color: $white;
+    font-weight: 900;
+}
+
+.request-form__text {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: $white;
+    font-weight: 400;
+}
+
+/* Form content */
+.request-form__content {
+    padding: 0 30px 30px;
+}
+
+.form__group {
+    margin-bottom: 25px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 12px;
+    padding-left: 50px;
+
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1rem;
+    color: $white;
+    font-weight: 400;
+
+    transition: border-color .1s linear;
+
+    &::placeholder {
+        color: $white;
+    }
+
+    &:focus {
+        outline: none;
+        border-bottom-color: $white;
+    }
+}
+
+.input--user {
+    background: url("../img/user.svg") left 15px top 32px no-repeat;
+}
+
+.input--tel {
+    background: url("../img/icon-call.svg") left 15px top 32px no-repeat;
+}
+
+.input--email{
+    background: url("../img/icon-mail.svg") left 15px top 35px no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
