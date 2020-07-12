@@ -28,6 +28,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+p {
+    margin: 0 0 10px;
+}
+
 /* Сбрасываем отступы и стилизацию списков */
 ul, ol {
     margin: 0;
@@ -49,3 +53,9 @@ ul, ol {
 @import "blocks/intro";
 @import "blocks/form";
 @import "blocks/btn";
+@import "blocks/section";
+@import "blocks/services";
+
+
+
+

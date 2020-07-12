@@ -1,0 +1,15 @@
+.section {
+    padding: 60px;
+}
+
+.section__title {
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    line-height: 1.2;
+    color: $black_text;
+    font-weight: 900;
+}
+
+.section__title-blue {
+    color: $blue_dark;
+}
