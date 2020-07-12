@@ -1,0 +1,100 @@
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 0 50px;
+    position: relative;
+
+    background-color: $white;
+    border-radius: $radius_sm;
+    box-shadow: $shadow;
+}
+
+.services__main-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 6rem;
+    line-height: 1;
+    color: rgba(44, 44, 44, .05);
+    font-weight: 900;
+    pointer-events: none;
+
+    position: absolute;
+    bottom: 12px;
+    right: 30px;
+    z-index: 1;
+}
+
+.services__item {
+    display: flex;
+    flex-direction: column;
+
+    width: 25%;
+    padding: 0 25px;
+    margin-bottom: 30px;
+}
+
+.services__title {
+    margin-bottom: 20px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: $black_text;
+    font-weight: 900;
+}
+
+.services__text {
+    margin-bottom: 20px;
+
+    font-size: 1rem;
+    line-height: 1.4;
+    color: $black_light;
+}
+
+.services__footer {
+    margin-top: auto;
+}
+
+.services__link {
+    display: inline-block;
+    font-size: 1rem;
+    color: $blue;
+    text-decoration: none;
+
+    transition: color .1s linear;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 2px;
+        margin-top: 5px;
+
+        background-color: $blue;
+
+        transition: width .1s linear;
+    }
+
+    &:hover {
+        color: $orange;
+
+        &:after {
+            width: 100%;
+            background-color: $orange;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
