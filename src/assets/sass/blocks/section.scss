@@ -2,7 +2,13 @@
     padding: 60px;
 }
 
+.section--map {
+    background: url("../img/map.svg") no-repeat left 30px top 130px;
+}
+
 .section__title {
+    margin-bottom: 40px;
+
     font-family: 'Lato', sans-serif;
     font-size: 3rem;
     line-height: 1.2;
