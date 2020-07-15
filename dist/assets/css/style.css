@@ -10,7 +10,7 @@ body {
     font-family: 'PT Sans', sans-serif;
     color: #000;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 *,
@@ -1795,6 +1795,10 @@ ul, ol {
     background: url("../img/map.svg") no-repeat left 30px top 130px;
 }
 
+.section--gray {
+    background: #F9f9f9;
+}
+
 .section__title {
     margin-bottom: 40px;
     font-family: 'Lato', sans-serif;
@@ -2073,4 +2077,64 @@ ul, ol {
     font-size: 1rem;
     line-height: 1.2;
     color: #585858;
+}
+
+.team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.team__col {
+    width: 33.33333%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team__photo {
+    margin-bottom: 13px;
+    -webkit-box-shadow: 10px 5px 13px rgba(0, 0, 0, 0.16);
+    box-shadow: 10px 5px 13px rgba(0, 0, 0, 0.16);
+}
+
+.team__name {
+    margin-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #2C2C2C;
+    font-weight: 900;
+}
+
+.team__prof {
+    margin-bottom: 11px;
+    font-size: 1rem;
+    color: #2C2C2C;
+}
+
+.taem__contacts {
+    font-size: 0.93rem;
+    line-height: 1.2;
+    color: #585858;
+}
+
+.taem__contacts li {
+    margin-bottom: 9px;
+}
+
+.taem__contacts a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.taem__contacts a:hover {
+    text-decoration: underline;
+}
+
+.taem__contacts-icon {
+    width: 16px;
+    margin-right: 7px;
 }

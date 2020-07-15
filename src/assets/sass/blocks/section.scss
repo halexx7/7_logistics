@@ -6,6 +6,10 @@
     background: url("../img/map.svg") no-repeat left 30px top 130px;
 }
 
+.section--gray {
+    background: $gray_section;
+}
+
 .section__title {
     margin-bottom: 40px;
 

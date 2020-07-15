@@ -1,0 +1,60 @@
+.team {
+    display: flex;
+    flex-wrap: wrap;
+//    justify-content: space-around;
+    margin: -15px;
+}
+
+.team__col {
+    width: 33.33333%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team__photo {
+    margin-bottom: 13px;
+
+    box-shadow: 10px 5px 13px rgba(0, 0, 0, .16);
+}
+
+.team__name {
+    margin-bottom: 5px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: $black_text;
+    font-weight: 900;
+}
+
+.team__prof {
+    margin-bottom: 11px;
+
+    font-size: 1rem;
+    color: $black_text;
+}
+
+.taem__contacts {
+    font-size: 0.93rem;
+    line-height: 1.2;
+    color: $black_light;
+
+    li {
+        margin-bottom: 9px;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.taem__contacts-icon {
+    width: 16px;
+    margin-right: 7px;
+}
