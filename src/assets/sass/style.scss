@@ -46,6 +46,10 @@ ul, ol {
     height: auto;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /* Bootstrap */
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../../../node_modules/bootstrap/scss/variables";
@@ -66,6 +70,7 @@ ul, ol {
 @import "blocks/reviews";
 @import "blocks/benefits";
 @import "blocks/team";
+@import "blocks/mission";
 
 
 
