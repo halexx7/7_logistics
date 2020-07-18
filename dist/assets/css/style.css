@@ -13,6 +13,10 @@ body {
     line-height: 1.4;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 *,
 *:before,
 *:after {
@@ -1763,6 +1767,47 @@ ul, ol {
     background: url("../img/icon-mail.svg") left 15px top 35px no-repeat;
 }
 
+.input--dark {
+    color: #000;
+    border-bottom-color: #E8E8E8;
+}
+
+.input--dark::-webkit-input-placeholder {
+    color: #2C2C2C;
+}
+
+.input--dark::-moz-placeholder {
+    color: #2C2C2C;
+}
+
+.input--dark:-ms-input-placeholder {
+    color: #2C2C2C;
+}
+
+.input--dark::-ms-input-placeholder {
+    color: #2C2C2C;
+}
+
+.input--dark::placeholder {
+    color: #2C2C2C;
+}
+
+.input--dark:focus {
+    border-bottom-color: #000;
+}
+
+.input--dark.input--user {
+    background: url("../img/user-black.svg") left 15px top 32px no-repeat;
+}
+
+.input--dark.input--tel {
+    background: url("../img/icon-call-black.svg") left 15px top 32px no-repeat;
+}
+
+.input--dark.input--email {
+    background: url("../img/icon-mail-black.svg") left 15px top 35px no-repeat;
+}
+
 .btn {
     display: inline-block;
     vertical-align: middle;
@@ -2322,3 +2367,125 @@ ul, ol {
 .footer__nav a:hover {
     text-decoration: underline;
 }
+
+/* Become Modal */
+.modal {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+.modal.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.modal__inner {
+    width: 400px;
+    padding: 25px;
+    position: relative;
+    background-color: #fff;
+}
+
+.modal__header {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.modal__icon {
+    margin-bottom: 10px;
+}
+
+.modal__title {
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: #004AF2;
+    font-weight: 900;
+}
+
+.modal__text {
+    font-size: 1rem;
+    color: #2C2C2C;
+}
+
+.modal__footer {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #E8E8E8;
+    text-align: center;
+}
+
+.modal__footer-title {
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    color: #2C2C2C;
+    font-weight: 900;
+}
+
+.modal__contacts {
+    font-size: 1rem;
+    color: #2C2C2C;
+    font-style: normal;
+}
+
+.modal__contacts p {
+    margin-bottom: 3px;
+}
+
+.modal__contacts a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.modal__contacts a:hover {
+    text-decoration: underline;
+}
+
+.modal__close {
+    width: 10px;
+    height: 20px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    z-index: 1;
+    -webkit-transition: -webkit-transform .2s linear;
+    transition: -webkit-transform .2s linear;
+    -o-transition: transform .2s linear;
+    transition: transform .2s linear;
+    transition: transform .2s linear, -webkit-transform .2s linear;
+}
+
+.modal__close:hover {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.modal__close img {
+    display: block;
+}
+
+/* Thanks Modal */

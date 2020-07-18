@@ -80,8 +80,34 @@
     background: url("../img/icon-call.svg") left 15px top 32px no-repeat;
 }
 
-.input--email{
+.input--email {
     background: url("../img/icon-mail.svg") left 15px top 35px no-repeat;
+}
+
+.input--dark {
+    color: $black;
+    border-bottom-color: #E8E8E8;
+
+    &::placeholder {
+        color: $black_text;
+    }
+
+    &:focus {
+        border-bottom-color: $black;
+    }
+
+    &.input--user {
+        background: url("../img/user-black.svg") left 15px top 32px no-repeat;
+    }
+
+    &.input--tel {
+        background: url("../img/icon-call-black.svg") left 15px top 32px no-repeat;
+    }
+
+    &.input--email {
+        background: url("../img/icon-mail-black.svg") left 15px top 35px no-repeat;
+    }
+
 }
 
 
