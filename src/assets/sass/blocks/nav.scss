@@ -11,6 +11,10 @@
 
     color: $white;
     text-decoration: none;
+
+    &:not(.active):hover {
+        text-decoration: underline;
+    }
 }
 
 .nav__link.active {

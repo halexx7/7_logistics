@@ -12,6 +12,10 @@
     bottom: -30px;
 }
 
+.request-form--right {
+    margin-left: auto;
+}
+
 /* Form header*/
 .request-form__header {
     padding: 20px 30px;
@@ -20,6 +24,8 @@
 }
 
 .request-form__title {
+    margin-bottom: 5px;
+
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
     line-height: 1.6;
@@ -36,7 +42,7 @@
 
 /* Form content */
 .request-form__content {
-    padding: 0 30px 30px;
+    padding: 0;
 }
 
 .form__group {
