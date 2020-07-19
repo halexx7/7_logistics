@@ -4,6 +4,10 @@
 
     background: $black url("../img/intro-bg.jpg") no-repeat center;
     background-size: cover;
+
+    @media (max-width: 767px) {
+        margin-bottom: 0;
+    }
 }
 
 .intro--blog {
