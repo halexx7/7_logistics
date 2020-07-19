@@ -3,14 +3,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 30px;
-}
 
-.articles--column {
-    flex-direction: column;
+    &--column {
+        flex-direction: column;
 
-    &.articles__item {
-        max-width: none;
-        margin-bottom: 45px;
+        &.articles__item {
+            max-width: none;
+            margin-bottom: 45px;
+        }
     }
 }
 
