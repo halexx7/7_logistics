@@ -46,7 +46,7 @@ ul, ol {
 /* Прописываем класс для адаптивных картинок */
 .img {
     display: block;
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -2026,6 +2026,12 @@ ul, ol {
     background: url("../img/map.svg") no-repeat left 30px top 130px;
 }
 
+@media (max-width: 991px) {
+    .section--map {
+        background-position: center top 130px;
+    }
+}
+
 .section--gray {
     background: #F9f9f9;
 }
@@ -2041,6 +2047,12 @@ ul, ol {
     line-height: 1.2;
     color: #2C2C2C;
     font-weight: 900;
+}
+
+@media (max-width: 991px) {
+    .section__title {
+        text-align: center;
+    }
 }
 
 @media (max-width: 575px) {
@@ -2169,12 +2181,35 @@ ul, ol {
     margin-bottom: 60px;
 }
 
+@media (max-width: 991px) {
+    .clients {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+}
+
 .clients__logos {
     width: 60%;
 }
 
+@media (max-width: 991px) {
+    .clients__logos {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
 .clients__reviews {
     width: 40%;
+}
+
+@media (max-width: 991px) {
+    .clients__reviews {
+        width: 100%;
+    }
 }
 
 .cliens__list {
@@ -2186,11 +2221,43 @@ ul, ol {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .cliens__list li {
     margin-right: 40px;
     margin-bottom: 40px;
+}
+
+.cliens__list li img {
+    margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+    .cliens__list li {
+        max-width: 130px;
+    }
+}
+
+@media (max-width: 575px) {
+    .cliens__list li {
+        max-width: none;
+        width: 30.33333%;
+        margin-right: 0;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .cliens__list {
+        margin: 0 -15px;
+    }
+}
+
+.clients__list-logo {
+    margin: 0 auto;
 }
 
 .client-love {

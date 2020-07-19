@@ -8,6 +8,10 @@
 
 .section--map {
     background: url("../img/map.svg") no-repeat left 30px top 130px;
+
+    @media (max-width: 991px) {
+        background-position: center top 130px;
+    }
 }
 
 .section--gray {
@@ -26,6 +30,10 @@
     line-height: 1.2;
     color: $black_text;
     font-weight: 900;
+
+    @media (max-width: 991px) {
+        text-align: center;
+    }
 
     @media (max-width: 575px) {
         font-size: 35px;
