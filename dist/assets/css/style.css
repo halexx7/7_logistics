@@ -1638,6 +1638,12 @@ ul, ol {
     background-size: cover;
 }
 
+.intro--text {
+    height: 350px;
+    background: #000 url("../img/text-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
 .intro__inner {
     height: 600px;
     display: -webkit-box;
@@ -1897,6 +1903,10 @@ ul, ol {
 
 .section--gray {
     background: #F9f9f9;
+}
+
+.section--last {
+    margin-bottom: 60px;
 }
 
 .section__title {
@@ -2355,7 +2365,7 @@ ul, ol {
 
 .footer {
     padding: 40px 0;
-    margin-top: 60px;
+    margin-top: auto;
     background-color: #F9f9f9;
     background-image: url("../img/tire-left.svg"), url("../img/tire-right.svg");
     background-repeat: no-repeat;
@@ -2528,4 +2538,86 @@ ul, ol {
 
 .main__col {
     width: 50%;
+}
+
+.page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.text {
+    max-width: 890px;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #585858;
+}
+
+.text p {
+    margin-bottom: 20px;
+}
+
+.text h2, .text h3, .text h4, .text h5, .text h6 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #2C2C2C;
+}
+
+.text h2 {
+    font-size: 1.8rem;
+}
+
+.text h3 {
+    font-size: 1.6rem;
+}
+
+.text h4 {
+    font-size: 1.4rem;
+}
+
+.text h5 {
+    font-size: 1.2rem;
+}
+
+.text h6 {
+    font-size: 1.5rem;
+}
+
+.text ul, .text ol {
+    margin-bottom: 20px;
+}
+
+.text ol {
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+.text hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 40px 0;
+    border: 0;
+    background-color: #d1d1d1;
+}
+
+.text img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.text a {
+    color: #004AF2;
+    text-decoration: none;
+}
+
+.text a:hover {
+    text-decoration: underline;
 }

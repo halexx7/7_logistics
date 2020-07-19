@@ -12,6 +12,13 @@
     background-size: cover;
 }
 
+.intro--text {
+    height: 350px;
+
+    background: $black url("../img/text-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
 .intro__inner {
     height: 600px;
     display: flex;
