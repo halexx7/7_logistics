@@ -12,6 +12,26 @@
         right -60px bottom -80px;
 
     text-align: center;
+
+    @media (max-width: 991px) {
+        background-size: 330px auto;
+        background-position:
+            left -60px bottom -30px,
+            right -60px bottom -30px;
+    }
+
+    @media (max-width: 767px) {
+        background-size: 250px auto;
+        background-position:
+            left -20px bottom -30px,
+            right -20px bottom -30px;
+    }
+
+    @media (max-width: 575px) {
+        background-position:
+            left -120px bottom -80px,
+            right -120px bottom -80px;
+    }
 }
 
 .footer__contacts {

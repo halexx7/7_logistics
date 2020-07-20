@@ -20,6 +20,10 @@
 
 .section--last {
     margin-bottom: 60px;
+
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+    }
 }
 
 .section__title {

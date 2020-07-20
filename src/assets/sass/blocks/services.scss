@@ -7,6 +7,11 @@
     background-color: $white;
     border-radius: $radius_sm;
     box-shadow: $shadow;
+
+    @media (max-width: 575px) {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
 }
 
 .services__main-title {
@@ -23,7 +28,14 @@
     z-index: 1;
 
     @media (max-width: 575px) {
+        width: 100%;
+
         font-size: 60px;
+        text-align: center;
+
+        bottom: auto;
+        right: auto;
+        top: 20px;
     }
 }
 

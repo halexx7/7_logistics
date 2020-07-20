@@ -26,6 +26,10 @@
     padding: 20px 30px;
 
     background-color: $blue_dark;
+
+    @media (max-width: 575px) {
+        padding: 20px;
+    }
 }
 
 .request-form__title {
@@ -36,6 +40,10 @@
     line-height: 1.6;
     color: $white;
     font-weight: 900;
+
+    @media (max-width: 575px) {
+        font-size: 25px;
+    }
 }
 
 .request-form__text {
@@ -48,6 +56,7 @@
 /* Form content */
 .request-form__content {
     padding: 0;
+
 }
 
 .form__group {

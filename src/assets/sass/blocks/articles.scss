@@ -1,8 +1,8 @@
 .articles {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 30px;
+    margin: 0 -15px 30px;
 
     &--column {
         flex-direction: column;
@@ -12,12 +12,21 @@
             margin-bottom: 45px;
         }
     }
+
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+    }
 }
 
 .articles__item {
     width: 100%;
     max-width: 500px;
     margin-bottom: 20px;
+    padding: 0 15px;
+
+    @media (max-width: 767px) {
+        max-width: none;
+    }
 }
 
 .articles__title {

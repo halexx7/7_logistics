@@ -6,13 +6,23 @@
     text-align: center;
     text-transform: uppercase;
     color: rgba(0, 0, 0, .05);
+
+    @media (max-width: 767px) {
+        font-size: 70px;
+
+    }
+
+    @media (max-width: 575px) {
+        font-size: 40px;
+
+    }
 }
 
 .mission {
     padding: 60px 30px;
     margin-bottom: 30px;
     position: relative;
-    top: -23px;
+    margin-top: -23px;
 
     background-color: $white;
     border-radius: $radius_sm;
@@ -41,6 +51,16 @@
         background-color: $red;
         left: 50%;
     }
+
+    @media (max-width: 767px) {
+        padding: 40px 20px;
+        margin-top: -16px;
+    }
+
+    @media (max-width: 575px) {
+        padding: 30px 20px;
+        margin-top: -10px;
+    }
 }
 
 .mission__title {
@@ -50,9 +70,25 @@
     line-height: 1.3;
     color: $blue;
     font-weight: 700;
+
+    @media (max-width: 767px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 575px) {
+        font-size: 20px;
+    }
 }
 
 .mission__subtitle {
     font-size: 1.4rem;
     color: $black_light;
+
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
+
+    @media (max-width: 575px) {
+        font-size: 16px;
+    }
 }
