@@ -1,9 +1,19 @@
 .benefits {
     display: flex;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
 
 .benefits_col {
     width: 50%;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
 }
 
 .benefits-list {
@@ -41,6 +51,11 @@
         background: url("../img/pin_green.svg");
 
         bottom: -40px;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 80px;
+        max-width: none;
     }
 }
 

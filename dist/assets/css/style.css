@@ -2347,8 +2347,25 @@ ul, ol {
     display: flex;
 }
 
+@media (max-width: 767px) {
+    .benefits {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
 .benefits_col {
     width: 50%;
+}
+
+@media (max-width: 767px) {
+    .benefits_col {
+        width: 100%;
+    }
 }
 
 .benefits-list {
@@ -2386,6 +2403,13 @@ ul, ol {
     bottom: -40px;
 }
 
+@media (max-width: 767px) {
+    .benefits-list {
+        margin-bottom: 80px;
+        max-width: none;
+    }
+}
+
 .benefits-list__item:not(:last-child) {
     margin-bottom: 35px;
 }
@@ -2414,10 +2438,38 @@ ul, ol {
     margin: -15px;
 }
 
+@media (max-width: 767px) {
+    .team {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
 .team__col {
     width: 33.33333%;
     padding: 0 15px;
     margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .team__col {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .team__col:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .team__items {
+        max-width: 370px;
+        margin: 0 auto;
+    }
 }
 
 .team__photo {
