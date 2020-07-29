@@ -19,6 +19,10 @@
 
 .request-form--right {
     margin-left: auto;
+
+    @media (max-width: 991px) {
+        margin: 30px auto 0;
+    }
 }
 
 /* Form header*/

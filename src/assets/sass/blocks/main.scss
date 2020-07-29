@@ -1,7 +1,29 @@
 .main {
     display: flex;
+
+    @media (max-width: 991px) {
+        flex-direction: column;
+    }
 }
 
 .main__col {
     width: 50%;
+
+    @media (max-width: 991px) {
+        width: 100%;
+    }
+}
+
+.main__col--left {
+
+    @media (max-width: 991px) {
+        width: 60%;
+    }
+}
+
+.main__col--right {
+
+    @media (max-width: 991px) {
+        width: 40%;
+    }
 }
