@@ -4,7 +4,7 @@
 
     @media (max-width: 991px) {
         flex-direction: column;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
 }
 
@@ -70,5 +70,11 @@
 
     font-size: 1.2rem;
     color: #464646;
-}
+
+    @media (max-width: 575px) {
+        display: block;
+        margin-top: 20px;
+        margin-left: 0;
+        }
+    }
 

@@ -15,7 +15,7 @@
     z-index: 2000;
 
     &.show {
-        display: flex;
+        display: block;
     }
 }
 
@@ -34,6 +34,11 @@
     position: relative;
 
     background-color: $white;
+    opacity: 0;
+
+    transform: scale(0.5);
+
+    transition: transform .2s ease-out, .2s ease-out;
 }
 
 .modal__header {
@@ -99,7 +104,7 @@
 }
 
 .modal__close {
-    width: 10px;
+    width: 20px;
     height: 20px;
     padding: 0;
 
@@ -116,6 +121,10 @@
 
     &:hover {
         transform: rotate(90deg);
+    }
+
+    &:focus {
+        outline: none;
     }
 
     img {

@@ -25,7 +25,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    &.no-scroll {
+    &.no-scroll,
+    &.show-nav {
         overflow: hidden;
     }
 }
@@ -63,6 +64,12 @@ ul, ol {
     text-align: center;
 }
 
+/* Vendor libs */
+@import "vendor/slick";
+
+/* AOS */
+@import "../../../node_modules/aos/src/sass/aos";
+
 /* Bootstrap */
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../../../node_modules/bootstrap/scss/variables";
@@ -90,6 +97,9 @@ ul, ol {
 @import "blocks/main";
 @import "blocks/page";
 @import "blocks/text";
+
+
+
 
 
 

@@ -25,21 +25,24 @@
 
 <div class="page">
     <!--Header-->
-    <header class="header  header--dark">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
-                <a href="index.html">
+                <a href="#" data-scroll="#intro">
                     <img class="img" src="assets/img/logo.svg" alt="CenterLogistic">
                 </a>
-                <nav class="nav">
+                <nav class="nav" id='nav'>
                     <a class="nav__link" href="index.html">Home</a>
                     <a class="nav__link" href="blog.html">Blog</a>
                     <a class="nav__link" href="text.html">Ptivacy Policy</a>
                     <a class="nav__link" href="text-2.html">Terms &amp; Conditions</a>
                 </nav>
     
-                <button class="burger" type="button">
-                    <img class="burger__icon" src="assets/img/burger.svg" alt="">
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__line">1</span>
+                    <span class="burger__line">2</span>
+                    <span class="burger__line">3</span>
+                    <span class="burger__line">4</span>
                 </button>
     
             </div><!--./header__inner-->
@@ -51,7 +54,7 @@
         
         
         <!-- Intro -->
-        <div class="intro intro--blog">
+        <div class="intro intro--blog" id="intro">
         
         </div>
         
@@ -141,8 +144,8 @@
     
             <nav class="footer__nav">
                 <a href="#">Terms &amp; Contidions</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Our blog</a>
+                <a href="text.html">Privacy Policy</a>
+                <a href="blog.html">Our blog</a>
             </nav>
         </div>
     </footer>
@@ -181,7 +184,7 @@
                 </address>
             </div>
 
-            <button class="modal__close" type="button">
+            <button class="modal__close" type="button" data-modal-close>
                <img src="assets/img/close.svg" alt="Close">
             </button>
         </div><!-- /.modal__content -->
@@ -219,7 +222,9 @@
     </div><!--/.modal__inner-->
 </div><!--/.thanksModal-->
 
-<script src="assets/js/app.min.js"></script>
+<!-- Javascript -->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.0.slim.min.js"></script>
+<script src="assets/js/app.js"></script>
 
 </body>
 </html>

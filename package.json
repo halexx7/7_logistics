@@ -7,6 +7,7 @@
         "gulp": "^4.0.2"
     },
     "dependencies": {
+        "aos": "^2.3.4",
         "bootstrap": "^4.5.0",
         "browser-sync": "^2.26.7",
         "del": "^5.1.0",
@@ -20,6 +21,8 @@
         "gulp-sass": "^4.1.0",
         "gulp-strip-css-comments": "^2.0.0",
         "gulp-uglify": "^3.0.2",
-        "panini": "^1.6.3"
+        "panini": "^1.6.3",
+        "slick-carousel": "^1.8.1",
+        "uglify-es": "^3.3.9"
     }
 }

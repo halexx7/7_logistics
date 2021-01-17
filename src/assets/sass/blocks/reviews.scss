@@ -1,6 +1,92 @@
 .reviews {
     position: relative;
 
+    & .slick-list {
+        padding-top: 20px;
+        z-index: 2;
+    }
+
+    & .slick-dots {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        z-index: 3;
+
+        & button {
+            display: block;
+            width: 10px;
+            height: 10px;
+            padding: 0;
+
+            background: #DBDBDB;
+            border: 0;
+            border-radius: 50%;
+            cursor: pointer;
+
+            color: transparent;
+            font-size: 0;
+
+            transition: background-color .2s linear, border-color .2s linear;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        & li {
+            margin: 0 5px;
+
+            &.slick-active button {
+
+                background: #004AF2;
+                box-shadow: 0 0 0 5px rgba(0, 74, 242, .11);
+            }
+
+
+            }
+        }
+    }
+
+
+.reviews::before,
+.reviews::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.reviews::before {
+    left: 0;
+
+    background-image: linear-gradient(to right, $white, rgba(255, 255, 255, 0));
+}
+
+.reviews::after {
+    right: 0;
+
+    background-image: linear-gradient(to left, $white, rgba(255, 255, 255, 0));
+}
+
+.reviews__item {
+    display: none;
+    padding: 0 10px;
+}
+
+.reviews__header {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
     &::before {
         content: "";
         display: block;
@@ -10,18 +96,10 @@
         background: url("../img/lines.svg") no-repeat;
 
         position: absolute;
-        top: -15px;
+        top: -13px;
         left: 2px;
         z-index: 1;
     }
-}
-
-.reviews__header {
-    display: flex;
-    margin-bottom: 30px;
-    align-items: center;
-    position: relative;
-    z-index: 2;
 }
 
 .reviews__header-main {
@@ -34,6 +112,8 @@
 .reviews__photo {
     width: 100px;
     height: 100px;
+    position: relative;
+    z-index: 2;
 
     border-radius: 50%;
     border: 5px solid $white;
